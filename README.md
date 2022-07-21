@@ -1,6 +1,8 @@
 <h1 align="center">
   搬自PKC大佬   https://github.com/curtinlv/gd
   <br>
+  V1.3.0
+  <br>
 </h1>
 
 
