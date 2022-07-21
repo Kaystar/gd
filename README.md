@@ -5,7 +5,7 @@
 
 - [x] 版本：2022.4.10 (v1.3.0)
 - [x] 去掉了代理加速
-- [x] 按青蛙大佬的方案修复400错误
+- [x] 按青蛙大佬的方案修复修复 RPCError 400: ENTITY_BOUNDS_INVALID (caused by SendMessageRequest) 报错
 <h1 align="center">
   青龙安装Bot监控
   <br>
