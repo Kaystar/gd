@@ -1,6 +1,7 @@
 <h1 align="center">
-  搬自PKC大佬   https://github.com/curtinlv/gd   2022.4.10 (v1.3.0)
+  搬自PKC大佬   https://github.com/curtinlv/gd
   <br>
+  2022.4.10 (v1.3.0)
   去掉了代理加速，并按青蛙大佬的方案修复400错误
   <br>
 </h1>
