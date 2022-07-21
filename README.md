@@ -3,7 +3,7 @@
   <br>
 </h1>
 
-- [x] 版本：2022.4.10 (v1.3.0)
+在PKC大佬v1.3.0(2022.4.10)版本基础上
 - [x] 去掉了代理加速,因为不用就不存在代理失效问题，没毛病
 - [x] 按青蛙大佬的方案修复 RPCError 400: ENTITY_BOUNDS_INVALID (caused by SendMessageRequest) 报错
 <h1 align="center">
