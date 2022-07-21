@@ -115,6 +115,14 @@ def backup_file(file):
 def press_event(user_id):
     return events.CallbackQuery(func=lambda e: e.sender_id == user_id)
 
+def reContent_INVALID(text):
+    replaceArr = ['_', '*', '~']
+    for i in replaceArr:
+        t = ''
+        for a in range(5):
+            t += i
+        text = re.sub('\%s{6,}' % i, t, text)
+    return text
 
 async def cmd(cmdtext):
     """定义执行cmd命令"""
@@ -124,6 +132,7 @@ async def cmd(cmdtext):
             cmdtext, stdout=asyncio.subprocess.PIPE, stderr=asyncio.subprocess.PIPE)
         res_bytes, res_err = await p.communicate()
         res = res_bytes.decode("utf-8")
+        res = reContent_INVALID(res)
         if res.find("先登录") > -1:
             await jdbot.delete_messages(chat_id, msg)
             res, msg = ql_login()
