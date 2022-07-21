@@ -1,13 +1,11 @@
 <h1 align="center">
   搬自PKC大佬   https://github.com/curtinlv/gd
   <br>
-  V1.3.0
-  <br>
 </h1>
 
 
 <h1 align="center">
-  青龙安装Bot监控
+  青龙安装Bot监控V1.3.0
   <br>
 </h1>
 - [x]  2022.4.9 已兼容青龙`2.12.x`版本路经
