@@ -132,7 +132,6 @@ async def cmd(cmdtext):
             cmdtext, stdout=asyncio.subprocess.PIPE, stderr=asyncio.subprocess.PIPE)
         res_bytes, res_err = await p.communicate()
         res = res_bytes.decode("utf-8")
-        res = reContent_INVALID(res)
         if res.find("先登录") > -1:
             await jdbot.delete_messages(chat_id, msg)
             res, msg = ql_login()
@@ -142,6 +141,7 @@ async def cmd(cmdtext):
             await jdbot.edit_message(msg, "已执行，但返回值为空")
         elif len(res) <= 4000:
             await jdbot.delete_messages(chat_id, msg)
+            res = reContent_INVALID(res)
             await jdbot.send_message(chat_id, res)
         elif len(res) > 4000:
             tmp_log = f'{LOG_DIR}/bot/{cmdtext.split("/")[-1].split(".js")[0]}-{datetime.datetime.now().strftime("%H-%M-%S")}.log'
